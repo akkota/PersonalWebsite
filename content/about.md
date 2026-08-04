@@ -1,16 +1,16 @@
 ---
 title: "About"
-description: "About Akhil Kota — Purdue CS + Data Science, ML research, and product work."
+description: "About Akhil Kota."
 showHeadingAnchors: false
 ---
 
-I'm **Akhil Kota**, a Computer Science and Data Science student at **Purdue** (class of 2027). I split my time between ML research and product engineering — usually somewhere that needs both solid modeling and code that holds up in practice.
+I'm **Akhil Kota**. I study Computer Science and Data Science at **Purdue** (class of 2027). Right now I spend most of my time on ML research and writing software for products.
 
-I've TA'd CS 240, stayed on the Dean's List, and picked up research recognition through OUR and SURF.
+I've been a TA for CS 240. I've also been on the Dean's List and gotten research recognition through OUR and SURF.
 
 ## How I work
 
-In labs, I design architectures, training pipelines, and evaluation setups. On product teams, I've shipped auth flows, recommendation systems, scrapers, and dashboards. Same habits in both places: define the problem clearly, get a baseline working, measure carefully, and keep iterating.
+In research, I work on models, training code, and evaluation. On product teams I've built login flows, recommenders, scrapers, and dashboards. Usually I start with a clear problem and a simple baseline, then improve from there.
 
 {{< buttonrow >}}
 {{< button href="experience/" >}}Experience{{< /button >}}

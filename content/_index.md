@@ -1,9 +1,9 @@
 ---
 title: "Akhil Kota"
-description: "Software engineer and ML researcher at Purdue."
+description: "CS and Data Science student at Purdue. ML research and software."
 ---
 
-Purdue CS + Data Science student working on ML research and shipping products. Most of my time goes into research labs, early-stage apps, and applied ML.
+I'm a CS and Data Science student at Purdue. I do ML research and build software, mostly for labs and early-stage products.
 
 <div class="akhil-cta-row">
 <div class="akhil-cta-primary">
@@ -19,5 +19,5 @@ Purdue CS + Data Science student working on ML research and shipping products. M
 {{< currentdivider >}}
 {{< currentitem icon="graduation-cap" >}}Purdue CS + Data Science{{< /currentitem >}}
 {{< currentdivider >}}
-{{< currentitem icon="code" >}}Building products & ML systems{{< /currentitem >}}
+{{< currentitem icon="code" >}}Building apps and ML tools{{< /currentitem >}}
 {{< /currently >}}

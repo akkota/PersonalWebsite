@@ -9,7 +9,7 @@ title = "Akhil Kota"
   isoCode = "en"
   rtl = false
   dateFormat = "January 2006"
-  description = "Software engineer and ML researcher at Purdue."
+  description = "CS and Data Science student at Purdue."
   copyright = "&copy; { year } Akhil Kota"
 
 [params.author]
@@ -17,8 +17,8 @@ title = "Akhil Kota"
   email = "akhilkota15@gmail.com"
   image = "img/author.jpg"
   imageQuality = 96
-  headline = "Software engineer, researcher, and builder"
-  bio = "Purdue CS + Data Science. ML research and products."
+  headline = "CS + Data Science at Purdue"
+  bio = "ML research and software at Purdue."
   links = [
     { email = "mailto:akhilkota15@gmail.com" },
     { github = "https://github.com/akkota" },

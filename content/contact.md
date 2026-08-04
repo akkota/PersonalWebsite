@@ -4,7 +4,7 @@ description: "Contact Akhil Kota."
 showTableOfContents: false
 ---
 
-I'm open to research collabs, internships, and product work that looks interesting. Email is the best way to reach me.
+Open to research, internships, and product work. Email is best.
 
 <div class="akhil-contact-list">
 <a href="mailto:akhilkota15@gmail.com"><strong>Email</strong> akhilkota15@gmail.com</a>
