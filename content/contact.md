@@ -4,8 +4,6 @@ description: "Contact Akhil Kota."
 showTableOfContents: false
 ---
 
-# Contact
-
 I'm open to research collabs, internships, and product work that looks interesting. Email is the best way to reach me.
 
 <div class="akhil-contact-list">

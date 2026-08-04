@@ -4,8 +4,6 @@ description: "About Akhil Kota — Purdue CS + Data Science, ML research, and pr
 showHeadingAnchors: false
 ---
 
-# About
-
 I'm **Akhil Kota**, a Computer Science and Data Science student at **Purdue** (class of 2027). I split my time between ML research and product engineering — usually somewhere that needs both solid modeling and code that holds up in practice.
 
 I've TA'd CS 240, stayed on the Dean's List, and picked up research recognition through OUR and SURF.
