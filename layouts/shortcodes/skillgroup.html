@@ -1,0 +1,18 @@
+{{- $accent := .Get "accent" | default "blue" -}}
+<div class="akhil-skill-group akhil-skill-accent-{{ $accent }}">
+  <div class="akhil-skill-head">
+    {{- with .Get "icon" -}}
+      <span class="akhil-skill-icon">{{ partial "icon.html" . }}</span>
+    {{- end -}}
+    <h3>{{ .Get "title" }}</h3>
+  </div>
+  <div class="akhil-skill-badges">
+    {{- $items := split (.Get "items") "," -}}
+    {{- range $items -}}
+      {{- $item := trim . " " -}}
+      {{- if $item -}}
+        <span class="akhil-badge">{{ $item }}</span>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</div>

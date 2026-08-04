@@ -1,0 +1,17 @@
+{{- $current := .Get "current" | default "false" -}}
+<div class="akhil-exprole{{ if eq $current "true" }} akhil-exprole-current{{ end }}">
+  <div class="akhil-exprole-date">{{ .Get "date" }}</div>
+  <div class="akhil-exprole-content">
+    <h3 class="akhil-exprole-title">{{ .Get "title" }}</h3>
+    <p class="akhil-exprole-org">{{ .Get "org" }}</p>
+    <p class="akhil-exprole-desc">{{ .Inner | strings.TrimSpace }}</p>
+    {{ with .Get "tags" }}
+    <div class="akhil-exprole-tags">
+      {{- range (split . "·") -}}
+        {{- $tag := trim . " " -}}
+        {{- if $tag -}}<span>{{ $tag }}</span>{{- end -}}
+      {{- end -}}
+    </div>
+    {{ end }}
+  </div>
+</div>

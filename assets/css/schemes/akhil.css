@@ -1,0 +1,38 @@
+/* Cyan dark palette */
+:root {
+  --color-neutral: 255, 255, 255;
+  --color-neutral-50: 232, 250, 255;
+  --color-neutral-100: 207, 250, 254;
+  --color-neutral-200: 165, 243, 252;
+  --color-neutral-300: 126, 184, 201;
+  --color-neutral-400: 94, 156, 175;
+  --color-neutral-500: 71, 125, 145;
+  --color-neutral-600: 51, 95, 115;
+  --color-neutral-700: 30, 68, 88;
+  --color-neutral-800: 15, 40, 56;
+  --color-neutral-900: 4, 16, 24;
+
+  /* primary #22d3ee */
+  --color-primary-50: 236, 254, 255;
+  --color-primary-100: 207, 250, 254;
+  --color-primary-200: 165, 243, 252;
+  --color-primary-300: 103, 232, 249;
+  --color-primary-400: 34, 211, 238;
+  --color-primary-500: 34, 211, 238;
+  --color-primary-600: 8, 145, 178;
+  --color-primary-700: 14, 116, 144;
+  --color-primary-800: 21, 94, 117;
+  --color-primary-900: 22, 78, 99;
+
+  /* secondary #0891b2 */
+  --color-secondary-50: 236, 254, 255;
+  --color-secondary-100: 207, 250, 254;
+  --color-secondary-200: 165, 243, 252;
+  --color-secondary-300: 103, 232, 249;
+  --color-secondary-400: 34, 211, 238;
+  --color-secondary-500: 8, 145, 178;
+  --color-secondary-600: 8, 145, 178;
+  --color-secondary-700: 14, 116, 144;
+  --color-secondary-800: 21, 94, 117;
+  --color-secondary-900: 22, 78, 99;
+}

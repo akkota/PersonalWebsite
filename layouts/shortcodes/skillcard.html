@@ -1,0 +1,14 @@
+<div class="akhil-skill-card">
+  <h3>{{ .Get "title" }}</h3>
+  {{ with .Get "icons" }}
+  <div class="akhil-skill-icons">
+    {{- range (split . ",") -}}
+      {{- $icon := trim . " " -}}
+      {{- if $icon -}}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ $icon }}/{{ $icon }}-original.svg" alt="{{ $icon }}" loading="lazy" onerror="this.style.display='none'">
+      {{- end -}}
+    {{- end -}}
+  </div>
+  {{ end }}
+  <p class="akhil-skill-list">{{ .Get "items" }}</p>
+</div>

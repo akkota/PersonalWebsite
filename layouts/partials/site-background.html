@@ -1,0 +1,17 @@
+{{ $bg := "" }}
+{{ with site.Params.defaultBackgroundImage }}
+  {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+    {{ $bg = resources.GetRemote . }}
+  {{ else }}
+    {{ $bg = resources.Get . }}
+  {{ end }}
+{{ end }}
+{{ if $bg }}
+<div class="akhil-site-bg" aria-hidden="true">
+  <img
+    class="akhil-site-bg-img nozoom"
+    src="{{ $bg.RelPermalink }}"
+    alt=""
+    role="presentation">
+</div>
+{{ end }}

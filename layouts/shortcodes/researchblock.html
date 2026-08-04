@@ -1,0 +1,33 @@
+{{- $image := .Get "image" -}}
+{{- $accent := .Get "accent" | default "blue" -}}
+{{- $reverse := .Get "reverse" | default "false" -}}
+{{- $link := .Get "link" -}}
+{{- $title := .Get "title" -}}
+<div class="akhil-research-block accent-{{ $accent }}{{ if eq $reverse "true" }} reverse{{ end }}">
+  <div class="akhil-research-visual">
+    {{- $img := resources.Get $image -}}
+    {{- if $img -}}
+      <img src="{{ $img.RelPermalink }}" alt="{{ $title }}" loading="lazy">
+    {{- else -}}
+      <img src="{{ $image | relURL }}" alt="{{ $title }}" loading="lazy">
+    {{- end -}}
+  </div>
+  <div class="akhil-research-body">
+    <p class="akhil-research-question">{{ .Get "question" }}</p>
+    <h3>{{ $title }}</h3>
+    <p class="akhil-research-meta">{{ .Get "meta" }}</p>
+    <p>{{ .Get "contribution" }}</p>
+    <p>{{ .Get "result" }}</p>
+    {{ with .Get "tags" }}
+    <div class="akhil-research-tags">
+      {{- range (split . "·") -}}
+        {{- $tag := trim . " " -}}
+        {{- if $tag -}}<span>{{ $tag }}</span>{{- end -}}
+      {{- end -}}
+    </div>
+    {{ end }}
+    {{ with $link }}
+    <a class="akhil-research-link" href="{{ . | relURL }}">Related experience →</a>
+    {{ end }}
+  </div>
+</div>

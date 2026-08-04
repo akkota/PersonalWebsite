@@ -1,0 +1,5 @@
+{{- $href := .Get "href" | relURL -}}
+<a class="akhil-preview-card" href="{{ $href }}">
+  <h3>{{ .Get "title" }}</h3>
+  <p>{{ .Inner | strings.TrimSpace }}</p>
+</a>

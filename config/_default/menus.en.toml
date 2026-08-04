@@ -1,0 +1,48 @@
+# -- Main Menu --
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 10
+
+[[main]]
+  name = "Experience"
+  pageRef = "experience"
+  weight = 20
+
+[[main]]
+  name = "Research"
+  pageRef = "research"
+  weight = 30
+
+[[main]]
+  name = "Skills"
+  pageRef = "skills"
+  weight = 40
+
+[[main]]
+  name = "Resume"
+  pageRef = "resume"
+  weight = 50
+
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 60
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/akkota"
+  weight = 10
+
+[[footer]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/in/akhil-kota"
+  weight = 20
+
+[[footer]]
+  name = "Email"
+  url = "mailto:akhilkota15@gmail.com"
+  weight = 30

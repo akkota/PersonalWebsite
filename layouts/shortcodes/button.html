@@ -1,0 +1,19 @@
+{{- $href := "" -}}
+{{- with .Get "pageRef" -}}
+  {{- $href = relref $.Page . -}}
+{{- else -}}
+  {{- $raw := $.Get "href" -}}
+  {{- if or (strings.HasPrefix $raw "http://") (strings.HasPrefix $raw "https://") (strings.HasPrefix $raw "mailto:") -}}
+    {{- $href = $raw -}}
+  {{- else -}}
+    {{- $href = relURL $raw -}}
+  {{- end -}}
+{{- end -}}
+<a
+  class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  {{ with $href }}href="{{ . }}"{{ end }}
+  {{ with .Get "target" }}target="{{ . }}"{{ end }}
+  {{ with .Get "rel" }}rel="{{ . }}"{{ end }}
+  role="button">
+  {{ .Inner }}
+</a>

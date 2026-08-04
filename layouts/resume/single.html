@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <article class="akhil-resume-page">
+    <div class="akhil-resume-wrap">
+      {{ .Content }}
+    </div>
+  </article>
+  {{ if site.Params.footer.showScrollToTop | default true }}
+    {{- partial "scroll-to-top.html" . -}}
+  {{ end }}
+{{ end }}
