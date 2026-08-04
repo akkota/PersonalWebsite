@@ -20,14 +20,14 @@
     <p>{{ .Get "result" }}</p>
     {{ with .Get "tags" }}
     <div class="akhil-research-tags">
-      {{- range (split . "·") -}}
+      {{- range (split . ",") -}}
         {{- $tag := trim . " " -}}
         {{- if $tag -}}<span>{{ $tag }}</span>{{- end -}}
       {{- end -}}
     </div>
     {{ end }}
     {{ with $link }}
-    <a class="akhil-research-link" href="{{ . | relURL }}">Related experience →</a>
+    <a class="akhil-research-link" href="{{ . | relURL }}">See related experience</a>
     {{ end }}
   </div>
 </div>

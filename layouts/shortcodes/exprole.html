@@ -7,7 +7,7 @@
     <p class="akhil-exprole-desc">{{ .Inner | strings.TrimSpace }}</p>
     {{ with .Get "tags" }}
     <div class="akhil-exprole-tags">
-      {{- range (split . "·") -}}
+      {{- range (split . ",") -}}
         {{- $tag := trim . " " -}}
         {{- if $tag -}}<span>{{ $tag }}</span>{{- end -}}
       {{- end -}}
