@@ -15,9 +15,9 @@
               {{ $final := $authorImage }}
               {{ $squareImage := $authorImage }}
               {{ if not (or $disableImageOptimization (eq $authorImage.MediaType.SubType "svg")) }}
-                {{ $final = $authorImage.Fill (print "352x352 Left q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+                {{ $final = $authorImage.Fill (print "352x352 Center q" ( $.Site.Params.Author.imagequality | default "96" )) }}
                 {{ $shortSide := int (math.Min $authorImage.Width $authorImage.Height) }}
-                {{ $squareImage = $authorImage.Crop (printf "%dx%d left" $shortSide $shortSide ) }}
+                {{ $squareImage = $authorImage.Crop (printf "%dx%d center" $shortSide $shortSide ) }}
               {{ end }}
               <img
                 class="mb-3 h-44 w-44 rounded-full object-cover"
@@ -25,8 +25,7 @@
                 height="176"
                 alt="{{ $.Site.Params.Author.name | default `Author` }}"
                 src="{{ $final.RelPermalink }}"
-                data-zoom-src="{{ $squareImage.RelPermalink }}"
-                style="object-position: 38% 28%;">
+                data-zoom-src="{{ $squareImage.RelPermalink }}">
             {{ end }}
           {{ end }}
           <h1 class="mb-2 text-5xl md:text-6xl font-extrabold text-neutral-800 dark:text-neutral-200">

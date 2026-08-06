@@ -179,11 +179,15 @@ article h1.mb-2 {
   position: relative;
   z-index: 1;
   padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .akhil-hero-content img.rounded-full {
   object-fit: cover;
-  object-position: 38% 28%;
+  object-position: 30% 40%;
   box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.35);
 }
 
@@ -202,6 +206,20 @@ article h1.mb-2 {
   z-index: 1;
   padding-top: 1rem;
   padding-bottom: 3rem;
+  text-align: center;
+}
+
+.akhil-home-body .prose {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 42rem;
+}
+
+.akhil-home-body .prose p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #background-blur {
@@ -330,6 +348,7 @@ article h1.mb-2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0;
   margin: 2.5rem auto 0;
   max-width: var(--akhil-text-width);

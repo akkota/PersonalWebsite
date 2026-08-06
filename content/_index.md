@@ -1,9 +1,9 @@
 ---
 title: "Akhil Kota"
-description: "CS and Data Science student at Purdue. ML research and software."
+description: "CS and Data Science student at Purdue."
 ---
 
-I'm a CS and Data Science student at Purdue. I work on ML research and build software for labs and small products.
+CS and Data Science at Purdue. I do ML research and write software.
 
 <div class="akhil-cta-row">
 <div class="akhil-cta-primary">

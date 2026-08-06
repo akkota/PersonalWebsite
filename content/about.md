@@ -4,13 +4,13 @@ description: "About Akhil Kota."
 showHeadingAnchors: false
 ---
 
-I'm **Akhil Kota**. I study Computer Science and Data Science at **Purdue** (class of 2027). Most days I'm either doing ML research or writing software for a product.
+I'm **Akhil Kota**. I study CS and Data Science at **Purdue** (class of 2027). I spend most of my time on ML research or building software.
 
-I TA'd CS 240. I've been on the Dean's List and gotten research recognition through OUR and SURF.
+I TA'd CS 240. I've been on the Dean's List, and I've gotten research recognition through OUR and SURF.
 
 ## How I work
 
-In research I work on models, training code, and evaluation. On product teams I've built login flows, recommenders, scrapers, and dashboards. I usually start with a simple baseline and improve from there.
+For research, I write training code, try models, and check results. On product teams I've built login, recommendations, scrapers, and dashboards. I like starting simple and improving what works.
 
 {{< buttonrow >}}
 {{< button href="experience/" >}}Experience{{< /button >}}
