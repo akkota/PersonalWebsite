@@ -7,11 +7,17 @@
   {{ end }}
 {{ end }}
 {{ if $bg }}
-<div class="akhil-site-bg" aria-hidden="true">
+{{/* Geometry is duplicated inline so a failed stylesheet can never let the
+     2168px pattern render at natural size and push the page below the fold. */}}
+<div
+  class="akhil-site-bg"
+  aria-hidden="true"
+  style="position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden;pointer-events:none;z-index:0">
   <img
     class="akhil-site-bg-img nozoom"
     src="{{ $bg.RelPermalink }}"
     alt=""
-    role="presentation">
+    role="presentation"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none">
 </div>
 {{ end }}
