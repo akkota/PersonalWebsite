@@ -82,7 +82,16 @@ h1, h2, h3, h4, h5, h6,
 
 .prose {
   max-width: var(--akhil-text-width);
+  margin-left: auto;
+  margin-right: auto;
   color: var(--akhil-muted);
+}
+
+/* Page-level wrappers must span their column, not the reading width */
+article.prose.max-w-full,
+article.prose > .relative {
+  max-width: 100%;
+  width: 100%;
 }
 
 .article-content.max-w-prose,
